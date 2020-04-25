@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:mysql:///stock?characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: sjh2019
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8181
