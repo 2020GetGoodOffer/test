@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ribbon" />
+        <module name="feign" />
+        <module name="nativeconfigserver" />
+        <module name="nativeconfigclient" />
+        <module name="zuul" />
+        <module name="hystrix" />
+        <module name="zipkin" />
+        <module name="configclient" />
+        <module name="eurekaclient" />
+        <module name="zipkinclient" />
+        <module name="resttemplate" />
+        <module name="eurekaserver" />
+        <module name="consumer" />
+        <module name="configserver" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="configclient" options="-parameters" />
+      <module name="configserver" options="-parameters" />
+      <module name="consumer" options="-parameters" />
+      <module name="eurekaclient" options="-parameters" />
+      <module name="eurekaserver" options="-parameters" />
+      <module name="feign" options="-parameters" />
+      <module name="hystrix" options="-parameters" />
+      <module name="nativeconfigclient" options="-parameters" />
+      <module name="nativeconfigserver" options="-parameters" />
+      <module name="resttemplate" options="-parameters" />
+      <module name="ribbon" options="-parameters" />
+      <module name="springcloud" options="-parameters" />
+      <module name="zipkin" options="-parameters" />
+      <module name="zipkinclient" options="-parameters" />
+      <module name="zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/configclient/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/configserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eurekaclient/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eurekaserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nativeconfigclient/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nativeconfigserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resttemplate/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ribbon/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkinclient/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul/src/main/java" charset="UTF-8" />
+  </component>
+</project>

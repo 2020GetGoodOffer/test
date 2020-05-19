@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: configclient # 本地配置文件 “-”前面的内容
+  profiles:
+    active: dev  # 本地配置文件 “-”后面的内容
+  cloud:
+    config:
+      uri: http://localhost:8762 #本地config server的访问路径
+      fail-fast: true #设置客户端优先判断 config server 获取是否正常
