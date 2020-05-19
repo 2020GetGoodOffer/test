@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 使用p命名空间构建依赖关系 -->
+    <bean id="stu" class="com.sjh.entity.Student" p:id="1" p:name="sjh" p:age="24" p:addresses-ref="addr"/>
+
+    <bean id="addr" class="com.sjh.entity.Address" p:country="China" p:city="beijing"/>
+
+
+    <!-- 将Student交给spring容器 -->
+    <bean id="student" class="com.sjh.entity.Student" scope="prototype">
+        <property name="id" value="1"/>
+        <property name="name" value="sjh"/>
+        <property name="age" value="24"/>
+        <property name="addresses">
+            <list>
+                <ref bean="address1"/>
+                <ref bean="address2"/>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="user" class="com.sjh.entity.User" depends-on="student2"/>
+
+    <bean id="student2" class="com.sjh.entity.Student"/>
+
+
+    <bean id="address1" class="com.sjh.entity.Address">
+        <property name="country" value="China"/>
+        <property name="city" value="xi'an"/>
+    </bean>
+
+    <bean id="address2" class="com.sjh.entity.Address">
+        <property name="country" value="China"/>
+        <property name="city" value="shanghai"/>
+    </bean>
+
+</beans>

@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'war'
+}
+
+group 'com.sjh'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.springframework', name: 'spring-context', version: '5.0.2.RELEASE'
+    providedCompile group: 'org.projectlombok', name: 'lombok', version: '1.16.12'
+    compile group: 'dom4j', name: 'dom4j', version: '1.6.1'
+    compile group: 'org.springframework', name: 'spring-aop', version: '5.0.2.RELEASE'
+    compile group: 'org.springframework', name: 'spring-aspects', version: '5.0.2.RELEASE'
+}

@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      name: configclient #与远程仓库的配置文件名对应
+      label: master #git仓库的分支
+      discovery:
+        enabled: true #是否开启 config 服务发现支持
+        service-id: configserver  #配置中心在 eureka server 的名称
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
